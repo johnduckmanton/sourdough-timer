@@ -1,0 +1,19 @@
+{
+  "bindings": [
+    {
+      "name": "myTimer",
+      "type": "timerTrigger",
+      "direction": "in",
+      "schedule": "0 9 * * * *"
+    },
+    {
+      "type": "twilioSms",
+      "name": "message",
+      "accountSidSetting": "TWILIO_ACCOUNT_SID",
+      "authTokenSetting": "TWILIO_AUTH_TOKEN",
+      "from": "+441133206132",
+      "direction": "out",
+      "body": "Sourdough timer Test Message"
+    }
+  ]
+}
